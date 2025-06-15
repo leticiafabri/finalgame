@@ -5,6 +5,8 @@ import chaveImg from '../assets/chave.png';
 export default function SalaCabana({ avancarSala, inventario, setInventario }) {
   const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
   const [chaveVisivel, setChaveVisivel] = useState(false);
+  const [abrindoOlhos, setAbrindoOlhos] = useState(true);
+
 
   useEffect(() => {
     const moverLanterna = (e) => {
@@ -24,6 +26,13 @@ export default function SalaCabana({ avancarSala, inventario, setInventario }) {
     return () => window.removeEventListener('mousemove', moverLanterna);
   }, [chaveVisivel]);
 
+
+  useEffect(() => {
+    const timer = setTimeout(() => setAbrindoOlhos(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  
+
   function pegarChave() {
     if (!inventario.includes('chave')) {
       setInventario([...inventario, 'chave']);
@@ -33,6 +42,32 @@ export default function SalaCabana({ avancarSala, inventario, setInventario }) {
 
   return (
     <div className="sala" style={{ backgroundImage: `url(${fundo})` }}>
+
+    {abrindoOlhos && (
+      <>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '50%',
+          backgroundColor: 'black',
+          zIndex: 9999,
+          animation: 'abrirCima 2.5s forwards'
+        }} />
+        <div style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: '100%',
+          height: '50%',
+          backgroundColor: 'black',
+          zIndex: 9999,
+          animation: 'abrirBaixo 2.5s forwards'
+        }} />
+      </>
+    )}
+
       <div
         className="lanterna"
         style={{ top: `${mousePos.y}%`, left: `${mousePos.x}%` }}
@@ -75,7 +110,7 @@ export default function SalaCabana({ avancarSala, inventario, setInventario }) {
           zIndex: 5
         }}
       >
-        Mova o mouse para explorar a sala com a lanterna.<br />
+        Explore a sala com a lanterna.<br />
         Algo está escondido aqui.
       </div>
     </div>

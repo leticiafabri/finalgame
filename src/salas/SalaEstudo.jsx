@@ -20,7 +20,7 @@ export default function SalaEstudo() {
   const verificarSenha = () => {
     if (JSON.stringify(entrada) === JSON.stringify(senhaCorreta)) {
       setAcertou(true);
-      setTimeout(() => navigate('/SalaPorao'), 2000);
+      setTimeout(() => navigate('/SalaFormas'), 2000);
     } else {
       setErro(true);
     }

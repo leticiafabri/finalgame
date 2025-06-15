@@ -183,3 +183,13 @@ max-width: 90%;
   }
   
 
+@keyframes abrirCima {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-100%); }
+}
+
+@keyframes abrirBaixo {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
+}
+  

@@ -6,6 +6,7 @@ import Jogo from './Jogo';
 import CenaFinal from './telas/TelaFim';
 import SalaEstudo from './salas/SalaEstudo';
 import SalaPorao from './salas/SalaPorao';
+import SalaFormas from './salas/SalaFormas';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/final" element={<CenaFinal />} />
         <Route path="/sala4" element={<SalaEstudo />} />
         <Route path="/SalaPorao" element={<SalaPorao />} />
+        <Route path="/SalaFormas" element={<SalaFormas />} />
       </Routes>
     </Router>
   );
