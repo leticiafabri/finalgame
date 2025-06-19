@@ -1,12 +1,35 @@
-# React + Vite
+# Memórias Submersas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Feito por:** Letícia Fabri e Bruno Mazetto  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre
 
-## Expanding the ESLint configuration
+**Memórias Submersas** é um jogo de mistério com enigmas e suspense. O jogador explora salas, encontra pistas e resolve enigmas para avançar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como Jogar
+
+- Mova o mouse para explorar.
+- Clique em objetos quando encontrar algo suspeito.
+- Resolva cofres e mecanismos com atenção às dicas no rodapé.
+- O jogo avança automaticamente a cada enigma resolvido.
+
+## Como Executar
+
+1. Clone o projeto:
+```bash
+git clone https://github.com/seu-usuario/memorias-submersas.git
+cd memorias-submersas
+
+```
+2. Instale as dependências:
+```bash
+npm install
+
+```
+3. Rode o jogo:
+```bash
+npm run dev
+
+```
+4. Acesse o navegador, e pronto!
