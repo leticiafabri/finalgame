@@ -25,6 +25,8 @@ cd memorias-submersas
 2. Instale as dependências:
 ```bash
 npm install
+```
+```bash
 npm install react-router-dom
 
 ```
