@@ -25,6 +25,7 @@ cd memorias-submersas
 2. Instale as dependências:
 ```bash
 npm install
+npm install react-router-dom
 
 ```
 3. Rode o jogo:
