@@ -18,7 +18,7 @@
 
 1. Clone o projeto:
 ```bash
-git clone https://github.com/seu-usuario/memorias-submersas.git
+git clone https://github.com/leticiafabri/finalgame.git
 cd memorias-submersas
 
 ```
